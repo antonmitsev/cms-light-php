@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    height: auto!important;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #442;
+}
+
+p, h1, h2, h3, h4, ul, li {
+    font-size: 1rem;
+    line-height: 2em;
+}
+
+h2 {
+    margin-block-start: 2.5em;
+}
+
+h2 {
+    opacity: 0.7;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 0 1rem;
+    height: auto!important;
+}
+
+header, footer {
+    flex: 0 1 200px;
+}
+
+.container {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.container > main {
+    flex: 1 0 auto;
+}
+
+.container > .side-nav {
+    margin-top: 4em;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .side-nav > a {
+    flex: 0 1 auto;
+    margin: 1em 0;
+}
+
+.container > .side-nav > hr {
+    flex: 0 1 auto;
+    margin: 0.67em 0 0;
+    opacity: 0.3;
+}
+
+footer {
+    flex-basis: 100px;
+}
+
+header > div, footer > div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 0 10px -4px #333;
+    padding: 0;
+}
+
+footer > div {
+    bottom: 0;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav > a {
+    flex: 1;
+    text-align: center;
+}
+
+p.title {
+    height: 3rem;
+    padding: 1rem;
+    color: transparent;
+    background: url(../img/tonymitsev.svg) no-repeat 3rem center;
+    background-size: auto 100%;
+}
+
+.home p.title {
+    height: 300px;
+    background-size: auto 93%;
+    background-position: 1rem 1rem;
+}
+
+.home header {
+    flex-basis: 400px;
+}
+
+.home header > div {
+    background: url(../img/tom-candy.jpg) no-repeat right bottom;
+    background-size: auto 100%;
+}
+
+p.en > a, a.en {
+    vertical-align: super;
+    font-size: 0.7em;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+a.fb {
+    color: #3f3fef;
+}
+
+blockquote {
+    font-size: 1.1em;
+    line-height: 2.25em;
+    font-family: Georgia, "Times New Roman", sans-serif;
+    margin-top: 2em;
+}
+
+blockquote + p {
+    text-align: right;
+    font-style: italic;
+    margin: 1em 0 2em;
+}
+
+@media only screen and (min-width: 700px) {
+    .home header > div {
+        background-size: 100% auto;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .container > main {
+        flex-basis: 70%;
+        padding-right: 2rem;
+    }
+
+    .container > .side-nav {
+        margin-top: 0;
+        padding-left: 2rem;
+        flex-basis: 250px;
+    }
+}
+
+/* Colours */
+header > div, footer > div {
+    background-color: #f3f3f3;
+}
+
+.top-nav {
+    background-color: #0e0e0e;
+    padding: 1rem 0;
+}
+
+.top-nav > a {
+    color: #f3f3f3;
+}
