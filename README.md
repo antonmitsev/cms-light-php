@@ -4,8 +4,13 @@
 
 ## Usage
 
-- Put files which do not need to be publically accessed in the WWW folder. HTML folder will be the base folder of your site.
-- Run `node scheduler` to start server and to watch for changes.
+- Routing - make php class for each page, like About class
+    - extend aPage
+    - use PascalCaseFormat for naming the class AND the file for each route (ex. /page-address -> file: PageAddress.class.php; class: PageAddress)
+- Put files which do not need to be publically accessed in the `www` folder, NOT in the `html` folder. 
+- `html` folder will be the base folder of your site. Your domain name should point to it on your PHP hosting
+- Run `node scheduler` to start server locally and to watch for changes. 
+- For production - upload only `www` folder
 
 ## Prerequisites
 
