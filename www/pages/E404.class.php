@@ -5,12 +5,12 @@ class E404 extends aPage
 	{
 		global $base_folder;
 		$this->page_vars = array(
-			'title' => 'Том Кенди - писател',
-			'description' => 'Страницата на Том Кенди.',
-			'h1' => '404 Том Кенди - ненамерена страница',
+			'title' => 'CMS Light - page not found',
+			'description' => 'CMS Light - page not found.',
+			'h1' => '404 CMS Light - Page not found!',
 			'page-class' => 'e404',
 			'content' => <<<ML
-<p>Липсваща страница. Можете да отидете на началната от <a href="/">тук</a>.</p>
+<p>The page you are trying to access is missing. You can go home <a href="/">by clicking here</a>.</p>
 ML
 
 		);

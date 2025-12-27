@@ -31,6 +31,7 @@ if ($uri == '') {
 
 if (!file_exists("../pages/{$class_name}.class.php")) {
 	$class_name = 'E404';
+	http_response_code(404);
 }
 
 include("../pages/{$class_name}.class.php");
